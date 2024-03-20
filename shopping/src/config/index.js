@@ -1,5 +1,6 @@
 const dotEnv = require("dotenv");
 const path = require("path");
+console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV !== "prod") {
   const envPath = path.resolve(__dirname, "../../", `.env.dev`);
   dotEnv.config({ path: envPath });
